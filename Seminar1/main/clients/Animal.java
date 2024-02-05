@@ -5,7 +5,7 @@ package main.clients;
 
 import java.time.LocalDate;
 
-public class Animal {
+public abstract class Animal {
     private String nickName;
     private Owner owner;
     private LocalDate birthDate;
@@ -53,18 +53,6 @@ public class Animal {
         this.illness = illness;
     }
 
-    public void fly() {
-        // Пустой метод
-    }
-
-    public void swim() {
-        // Пустой метод
-    }
-
-    public void walk() {
-        // Пустой метод
-    }
-
     public void lifeCycle() {
         System.out.println("Родился");
         System.out.println("Рос");
@@ -74,6 +62,8 @@ public class Animal {
     public String getType() {
         return "Unknown Animal";
     }
+
+    public abstract void eat();
 
     @Override
     public String toString() {

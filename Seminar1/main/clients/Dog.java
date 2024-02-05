@@ -5,7 +5,8 @@ package main.clients;
 
 import java.time.LocalDate;
 
-public class Dog extends Animal {
+public class Dog extends Animal implements Goable, Huntable, Swimble {
+
     public Dog() {
     }
 
@@ -13,21 +14,27 @@ public class Dog extends Animal {
         super(nickName, owner, birthDate, illness);
     }
 
-    @Override
-    public void fly() {
-        // Пустой метод
-    }
-
     public void swim() {
         System.out.println("Животное плавает");
     }
 
-    public void walk() {
+    public void toGo() {
         System.out.println("Животное ходит");
     }
 
     @Override
     public String getType() {
         return "Dog";
+    }
+
+    @Override
+    public void eat() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'eat'");
+    }
+
+    public static void add(Animal a) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'add'");
     }
 }

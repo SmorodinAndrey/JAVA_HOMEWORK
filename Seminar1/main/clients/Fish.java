@@ -5,17 +5,12 @@ package main.clients;
 
 import java.time.LocalDate;
 
-public class Fish extends Animal {
+public class Fish extends Animal implements Swimble, Goable, Flyble {
     public Fish() {
     }
 
     public Fish(String nickName, Owner owner, LocalDate birthDate, Illness illness) {
         super(nickName, owner, birthDate, illness);
-    }
-
-    @Override
-    public void walk() {
-        // Пустой метод
     }
 
     public void swim() {
@@ -30,5 +25,22 @@ public class Fish extends Animal {
     @Override
     public String getType() {
         return "Fish";
+    }
+
+    @Override
+    public void eat() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'eat'");
+    }
+
+    public static void add(Animal a) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'add'");
+    }
+
+    @Override
+    public void toGo() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'toGo'");
     }
 }

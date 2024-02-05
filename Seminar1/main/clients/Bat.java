@@ -5,11 +5,11 @@ package main.clients;
 
 import java.time.LocalDate;
 
-public class Crow extends Animal implements Goable, Huntable, Swimble, Flyble {
-    public Crow() {
+public class Bat extends Animal implements Goable, Huntable, Swimble, Flyble {
+    public Bat() {
     }
 
-    public Crow(String nickName, Owner owner, LocalDate birthDate, Illness illness) {
+    public Bat(String nickName, Owner owner, LocalDate birthDate, Illness illness) {
         super(nickName, owner, birthDate, illness);
     }
 
@@ -28,7 +28,7 @@ public class Crow extends Animal implements Goable, Huntable, Swimble, Flyble {
 
     @Override
     public String getType() {
-        return "Crow";
+        return "Bat";
     }
 
     @Override
@@ -37,8 +37,4 @@ public class Crow extends Animal implements Goable, Huntable, Swimble, Flyble {
         throw new UnsupportedOperationException("Unimplemented method 'eat'");
     }
 
-    public static void add(Animal a) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'add'");
-    }
 }
